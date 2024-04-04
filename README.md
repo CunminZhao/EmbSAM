@@ -24,3 +24,8 @@ conda activate EmbSAM
 cd EmbSAM
 pip install -r ./requirements.txt
 ```
+
+### Dataset
+You can refer to the following links to download the datasets
+[190311plc1mp1_raw_90s_low SNR](https://drive.google.com/file/d/1SuLN8iG_siZlKvDuMIbYknOVR8WY4Axu/view?usp=sharing), 
+[190311plc1mp3_raw_90s_low SNR](https://drive.google.com/file/d/1uL9M1xOuXyR36clcs0csCi-bLYWrYdg3/view?usp=sharing). 
