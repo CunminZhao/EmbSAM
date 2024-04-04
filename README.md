@@ -14,5 +14,9 @@ In [ArXiv]
 ```
 git clone https://github.com/cuminzhao/EmbSAM.git
 ```
+2. Create Conda Environment
+```
+conda create --name EmbSAM python=3.XX
+conda activate EmbSAM
 
 
