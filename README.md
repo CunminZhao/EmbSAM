@@ -18,5 +18,3 @@ git clone https://github.com/cuminzhao/EmbSAM.git
 ```
 conda create --name EmbSAM python=3.XX
 conda activate EmbSAM
-
-
