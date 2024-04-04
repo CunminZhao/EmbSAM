@@ -3,8 +3,7 @@
 In [ArXiv]
 
 ## Overall
-![截屏2024-04-04 下午10 50 59](https://github.com/cuminzhao/EmbSAM/assets/80189429/9fb048d2-23f9-42e9-b954-1534ed79c84d)
-
+<img width="400" alt="Ai" src="https://github.com/cuminzhao/EmbSAM/assets/80189429/9fb048d2-23f9-42e9-b954-1534ed79c84d" align="left"> 
 
 
 
