@@ -3,7 +3,7 @@
 In [ArXiv]
 
 ## Overall
-![framework](https://github.com/cuminzhao/EmbSAM/assets/80189429/9fc6f802-a573-45b0-8e5e-225b355dead4)
+![截屏2024-04-04 下午10 50 59](https://github.com/cuminzhao/EmbSAM/assets/80189429/9fb048d2-23f9-42e9-b954-1534ed79c84d)
 
 
 
