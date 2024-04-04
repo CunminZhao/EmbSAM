@@ -10,5 +10,9 @@ In [ArXiv]
 - Python 3.XX
 - Pytorch X.XX
 
+1. Clone Repo
+```
+git clone https://github.com/cuminzhao/EmbSAM.git
+```
 
 
