@@ -85,6 +85,9 @@ Then run
 python EmbSAM.py -cfg_path ./confs/running_Mem.txt 
 ```
 
-
+you will get your result in 
+```
+./output_folder/result
+```
 
 to be continue...
