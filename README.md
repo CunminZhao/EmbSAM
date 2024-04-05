@@ -38,9 +38,6 @@ You can refer to the following links to download the datasets
 
 ### Pretrained Model
 the pre-trained models of this project can be download here
-- The segment anything model with vit_b [[sam_vit_b_01ec64.pth](https://drive.google.com/file/d/15MIZgQ276UCkyz8zcA6yf1BzRcS-Q8eM/view?usp=drive_link)]
-- The image denosing model trained on x_axis [[X_axis.pth](https://drive.google.com/file/d/1ef4jBB2OdSfkg0W5737XxzCx2G0zT7FO/view?usp=sharing)] 
-- The image denosing model trained on y_axis [[Y_axis.pth](https://drive.google.com/file/d/1F8hNc82VuBdZuHmLy0vktgIBhpSkIrIx/view?usp=sharing)]
-- The image denosing model trained on z_axis [[Z_axis.pth](https://drive.google.com/file/d/1xNcYA_Vquv33YU2b4SugVyzEkOtK5JmX/view?usp=sharing)]
+- The model_parameters with segment anything model(vit_b) The image denosing model trained on x_axis, y_axis and z_axis [[model_parameters](https://drive.google.com/drive/folders/1vNp7KypEOxTXCxHLS6N4kET1M_cfBtup?usp=drive_link)]
 
 
