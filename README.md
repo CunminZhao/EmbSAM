@@ -12,7 +12,7 @@ In [ArXiv]
 
 ### Quantitative results
 #### Evaluation on LOL
-The evauluation results on LOL are as follows
+The evauluation results on LOL are as follows   
 <img width="400" alt="Ai2" src="https://github.com/cuminzhao/EmbSAM/assets/80189429/bdd15fa1-92b4-4527-bc6e-b8e1689cecd3">
 
 
