@@ -18,14 +18,15 @@ the code is not totally uploaded and test, please do not start
 - Python 3.11.0
 - Pytorch X.XX
 
-1. Clone Repo
-```
-git clone https://github.com/cuminzhao/EmbSAM.git
-```
-2. Create Conda Environment
+1. Create Conda Environment
 ```
 conda create --name EmbSAM python=3.XX
 conda activate EmbSAM
+conda install anaconda::git
+```
+2. Clone Repo
+```
+git clone https://github.com/cuminzhao/EmbSAM.git
 ```
 3. Install Dependencies
 ```
