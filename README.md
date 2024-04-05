@@ -37,7 +37,6 @@ You can refer to the following links to download the datasets
 [raw_data3_with_10s_interval](https://drive.google.com/file/d/1t0MxzF-48Gp6BWrEhGM-abljXOTefYAC/view?usp=sharing)
 * **Structure of data folder**: 
     ```buildoutcfg
-    you can put the *.tif data in data folder as follow
     data/
       |--raw_data1_with_90s_interval
     ```
@@ -49,7 +48,6 @@ the pre-trained models of this project can be download here
 
 * **Structure of model_parameters**: 
     ```buildoutcfg
-    you need to put the pre-trained models of EmbSAM in model_parameters as follow
     model_parameters/
       |--Z_axis.pth
       |--Y_axis.pth
