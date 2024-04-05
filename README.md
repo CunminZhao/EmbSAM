@@ -41,7 +41,8 @@ You can refer to the following links to download the datasets
 ### Pretrained Model
 the pre-trained models of this project can be download here
 - The model_parameters with segment anything model(vit_b) and the image denosing model trained on x_axis, y_axis and z_axis [[model_parameters](https://drive.google.com/drive/folders/1vNp7KypEOxTXCxHLS6N4kET1M_cfBtup?usp=drive_link)]
-- * **Structure of model_parameters**: 
+you need to download these parameters and put them into model_parameters
+* **Structure of model_parameters**: 
     ```buildoutcfg
     model_parameters/
       |--Z_axis.pth
@@ -63,14 +64,6 @@ example1: to run EmbSAM with 190311plc1mp1_raw, you need to keep these data in
       |--CD190311plc1mp1.csv
       |--running_190311plc1mp3.txt
     ```
-* **Structure of model_parameters**: 
-    ```buildoutcfg
-    model_parameters/
-      |--Z_axis.pth
-      |--Y_axis.pth
-      |--X_axis.pth
-      |--sam_vit_b_01ec64.pth
-    ```
 ```
 python EmbSAM.py -cfg_path ./confs/running_190311plc1mp1.txt
 ```
@@ -86,14 +79,6 @@ example2: to run EmbSAM with 10s_data_from_guoye, you need to keep these data in
     confs/
       |--DataS1_CellTracing.csv
       |--running_Mem.txt
-    ```
-* **Structure of model_parameters**: 
-    ```buildoutcfg
-    model_parameters/
-      |--Z_axis.pth
-      |--Y_axis.pth
-      |--X_axis.pth
-      |--sam_vit_b_01ec64.pth
     ```
 ```
 python EmbSAM.py -cfg_path ./confs/running_Mem.txt 
