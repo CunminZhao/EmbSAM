@@ -62,6 +62,7 @@ Example1: to run EmbSAM with 190311plc1mp1_raw, you need to keep these data in
     confs/
       |--CD190311plc1mp1.csv
       |--running_190311plc1mp3.txt
+      |--other running confs...
     ```
 Then run
 ```
@@ -79,6 +80,7 @@ Example2: to run EmbSAM with 10s_data_from_guoye, you need to keep these data in
     confs/
       |--DataS1_CellTracing.csv
       |--running_Mem.txt
+      |--other running confs...
     ```
 Then run
 ```
