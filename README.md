@@ -40,8 +40,7 @@ You can refer to the following links to download the datasets
 
 ### Pretrained Model
 the pre-trained models of this project can be download here
-- The model_parameters with segment anything model(vit_b) and the image denosing model trained on x_axis, y_axis and z_axis [[model_parameters](https://drive.google.com/drive/folders/1vNp7KypEOxTXCxHLS6N4kET1M_cfBtup?usp=drive_link)]  
-you need to download these parameters and put them into model_parameters
+- The model_parameters with segment anything model(vit_b) and the image denosing model trained on x_axis, y_axis and z_axis [[model_parameters](https://drive.google.com/drive/folders/1vNp7KypEOxTXCxHLS6N4kET1M_cfBtup?usp=drive_link)]. You need to download these parameters and put them into model_parameters.
 * **Structure of model_parameters**: 
     ```buildoutcfg
     model_parameters/
