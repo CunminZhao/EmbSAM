@@ -15,7 +15,7 @@ In [ArXiv]
 ## Get Started
 the code is not totally uploaded and test, please do not start
 ### Dependencies and Installation
-- Python 3.XX
+- Python 3.11.0
 - Pytorch X.XX
 
 1. Clone Repo
