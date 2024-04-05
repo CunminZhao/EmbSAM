@@ -8,7 +8,7 @@ In [ArXiv]
 
 
 ## Overall
-<img width="600" alt="Ai" src="https://github.com/cuminzhao/EmbSAM/assets/80189429/9fb048d2-23f9-42e9-b954-1534ed79c84d"> 
+<img width="1000" alt="Ai" src="https://github.com/cuminzhao/EmbSAM/assets/80189429/9fb048d2-23f9-42e9-b954-1534ed79c84d"> 
 
 ## Get Started
 the code is not totally uploaded and test, please do not start
