@@ -2,7 +2,7 @@
 <br>_Cunmin Zhao, Zelin Li, Hong Yan, Chao Tang, Guoye Guan, Zhongying Zhao_<br>
 In [ArXiv]  
 
-**Motivations**: XXX
+**Motivations**: Embryonic development involves cell deformation, migration, division, and differentiation, which can be as fast as in seconds to minutes. Due to photobleaching and phototoxicity, fluorescence imaging at high temporal resolution requests a weak laser intensity, leading to a low signal-to-noise ratio. This shortcoming impedes three-dimensional (3D) shape reconstruction across cellular to organismic scales.  
   
 **Results**: XXX 
 
