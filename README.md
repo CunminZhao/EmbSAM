@@ -2,8 +2,8 @@
 <br>_Cunmin Zhao, Zelin Li, Hong Yan, Chao Tang, Guoye Guan, Zhongying Zhao_<br>
 In [ArXiv]  
 
-**Motivations**: Embryonic development involves cell deformation, migration, division, and differentiation, which can be as fast as in seconds to minutes. Due to photobleaching and phototoxicity, fluorescence imaging at high temporal resolution requests a weak laser intensity, leading to a low signal-to-noise ratio. This shortcoming impedes three-dimensional (3D) shape reconstruction across cellular to organismic scales.  
-**Results**: We devised a computational framework, EmbSAM, which incorporates a deep-learning-based cell boundary localization algorithm and the Segment Anything Model proposed before. Using the 3D fluorescence images on cell membranes in the nematode Caenorhabditis elegans embryos, EmbSAM outperforms the latest cell segmentation tools and rebuilds all the 3D cell shapes up to the gastrulation stage at 10-second intervals. The outputted data can clearly exhibit critical cell and developmental biological processes, including cytokinesis, body-axis symmetry breaking, cell migration, and gastrulation.  
+**Motivations**: XXX  
+**Results**: XXX
 
 
 
