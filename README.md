@@ -13,7 +13,6 @@ In [ArXiv]
 
 
 ## Get Started
-the code is not totally uploaded and test, please do not start
 ### Dependencies and Installation
 - Python 3.11.0
 - Pytorch 2.0.1
