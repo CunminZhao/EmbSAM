@@ -12,7 +12,6 @@ In [ArXiv]
 
 
 **Fig. 1. The flowchart of EmbSAM**
-**Results**: XXX 
 ## Get Started
 ### Dependencies and Installation
 - Python 3.11.0
