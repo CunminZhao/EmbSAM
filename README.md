@@ -32,13 +32,16 @@ pip install -r ./requirements.txt
 
 ### Dataset
 You can refer to the following links to download the datasets
-[raw_data1_with_90s_interval](https://drive.google.com/file/d/1SuLN8iG_siZlKvDuMIbYknOVR8WY4Axu/view?usp=sharing), 
-[raw_data2_with_90s_interval](https://drive.google.com/file/d/1uL9M1xOuXyR36clcs0csCi-bLYWrYdg3/view?usp=sharing). and
-[raw_data3_with_10s_interval](https://drive.google.com/file/d/1t0MxzF-48Gp6BWrEhGM-abljXOTefYAC/view?usp=sharing)
+[190311plc1mp1_raw.zip](https://drive.google.com/file/d/1SuLN8iG_siZlKvDuMIbYknOVR8WY4Axu/view?usp=drive_link), 
+[190311plc1mp3_raw.zip](https://drive.google.com/file/d/1uL9M1xOuXyR36clcs0csCi-bLYWrYdg3/view?usp=drive_link). and
+[10s_data_from_guoye.zip](https://drive.google.com/file/d/1L3EkZ1URrJ6ABQoVC1Rnpt9fE4I6ssuc/view?usp=drive_link)
 * **Structure of data folder**: 
     ```buildoutcfg
     data/
-      |--raw_data1_with_90s_interval
+      |--190311plc1mp1_raw
+      |--190311plc1mp3_raw
+      |--10s_data_from_guoye
+      |--or your correctly named custom data 
     ```
 
 ### Pretrained Model
