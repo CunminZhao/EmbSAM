@@ -55,7 +55,7 @@ example1: to run EmbSAM with 190311plc1mp1_raw, you need to keep these data in
 * **Structure of data folder**: 
     ```buildoutcfg
     data/
-      |--190311plc1mp1_raw
+      |--190311plc1mp1_raw/*.tif
     ```
 * **Structure of confs folder**: 
     ```buildoutcfg
@@ -72,7 +72,7 @@ example2: to run EmbSAM with 10s_data_from_guoye, you need to keep these data in
 * **Structure of data folder**: 
     ```buildoutcfg
     data/
-      |--10s_data_from_guoye
+      |--10s_data_from_guoye/*.tif
     ```
 * **Structure of confs folder**: 
     ```buildoutcfg
