@@ -104,6 +104,6 @@ will be uploaded soon
 to be continue...
 
 ## Acknowledgement
-- The design of the segmentation algorithm is inspired by [CShaper](https://github.com/cao13jf/CShaper) and [MedLSAM](https://github.com/openmedlab/MedLSAM)
+- The design of the segmentation algorithm is inspired by [CShaper](https://github.com/cao13jf/CShaper) and [MedLSAM](https://github.com/openmedlab/MedLSAM).
 - A part of code is modified from [llflow](https://github.com/wyf0912/LLFlow).
 - We thank Meta AI for making the source code of [segment anything](https://github.com/facebookresearch/segment-anything) publicly available.
