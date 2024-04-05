@@ -41,7 +41,7 @@ the pre-trained models of this project can be download here
 - The model_parameters with segment anything model(vit_b) and the image denosing model trained on x_axis, y_axis and z_axis [[model_parameters](https://drive.google.com/drive/folders/1vNp7KypEOxTXCxHLS6N4kET1M_cfBtup?usp=drive_link)]
 
 
-* **Structure of folders**: 
+**Structure of folders**: 
     ```buildoutcfg
     DMapNet is used to segmented membrane stack of C. elegans at cellular level
     DMapNet/
