@@ -36,4 +36,10 @@ You can refer to the following links to download the datasets
 [raw_data2_with_90s_interval](https://drive.google.com/file/d/1uL9M1xOuXyR36clcs0csCi-bLYWrYdg3/view?usp=sharing). and
 [raw_data3_with_10s_interval](https://drive.google.com/file/d/1t0MxzF-48Gp6BWrEhGM-abljXOTefYAC/view?usp=sharing)
 
-to be continue...
+### Pretrained Model
+the pre-trained models of this project can be download here
+- The segment anything model with vit_b [[Google drive](https://drive.google.com/file/d/15MIZgQ276UCkyz8zcA6yf1BzRcS-Q8eM/view?usp=drive_link)]
+- 
+- A standard-sized model trained on LOL [[Google drive](https://drive.google.com/file/d/1t3kASTRXbnEnCZ0EcIvGhMHYkoJ8E2C4/view?usp=sharing)] with training config file `./confs/LOL-pc.yml`.
+- A standard-sized model trained on LOL-v2 [[Google drive](https://drive.google.com/file/d/1n7XwIlNr1lUxgZ9qlmFXCwzMTWSStQIW/view?usp=sharing)] with training config file `./confs/LOLv2-pc.yml`.
+
