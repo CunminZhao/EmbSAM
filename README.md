@@ -53,6 +53,7 @@ the pre-trained models of this project can be download here
     ```
 
 ### Test  
+you can learn from these 2 examples to run your custom data
 **Example1**: to run EmbSAM with 190311plc1mp1_raw, you need to keep these data in
 * **Structure of data folder**: 
     ```buildoutcfg
