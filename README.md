@@ -49,7 +49,6 @@ the pre-trained models of this project can be download here
       |--Y_axis.pth
       |--X_axis.pth
       |--sam_vit_b_01ec64.pth
-
     ```
 
 
