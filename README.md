@@ -37,7 +37,7 @@ pip install -r ./requirement.txt
 You can refer to the following links to download the datasets
 [190311plc1mp1_raw.zip](https://drive.google.com/file/d/1SuLN8iG_siZlKvDuMIbYknOVR8WY4Axu/view?usp=drive_link), 
 [190311plc1mp3_raw.zip](https://drive.google.com/file/d/1uL9M1xOuXyR36clcs0csCi-bLYWrYdg3/view?usp=drive_link). and
-[10s_data_from_guoye.zip](https://drive.google.com/file/d/1L3EkZ1URrJ6ABQoVC1Rnpt9fE4I6ssuc/view?usp=drive_link)
+[cell_membrane_10s.zip](https://drive.google.com/file/d/1L3EkZ1URrJ6ABQoVC1Rnpt9fE4I6ssuc/view?usp=drive_link)
 
 
 ### Pretrained Model
@@ -72,11 +72,11 @@ Then run
 python EmbSAM.py -cfg_path ./confs/running_190311plc1mp1.txt
 ```
 
-**Example2**: to run EmbSAM with 10s_data_from_guoye, you need to keep these data in
+**Example2**: to run EmbSAM with cell_membrane_10s, you need to keep these data in
 * **Structure of data folder**: 
     ```buildoutcfg
     data/
-      |--10s_data_from_guoye/*.tif
+      |--/cell_membrane_10s/*.tif
     ```
 * **Structure of confs folder**: 
     ```buildoutcfg
