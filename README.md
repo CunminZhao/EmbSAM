@@ -57,7 +57,7 @@ the pre-trained models of this project can be download here
       |--X_axis.pth
       |--sam_vit_b_01ec64.pth
     ```
-
+to be continue...
 
 
 
