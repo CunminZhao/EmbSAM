@@ -41,26 +41,15 @@ the pre-trained models of this project can be download here
 - The model_parameters with segment anything model(vit_b) and the image denosing model trained on x_axis, y_axis and z_axis [[model_parameters](https://drive.google.com/drive/folders/1vNp7KypEOxTXCxHLS6N4kET1M_cfBtup?usp=drive_link)]
 
 
-**Structure of folders**: 
+* **Structure of model_parameters**: 
     ```buildoutcfg
-    DMapNet is used to segmented membrane stack of C. elegans at cellular level
-    DMapNet/
-      |--configmemb/: parameters for training, testing and unifying label
-      |--Data/: raw membrane, raw nucleus and AceTree file (CD**.csv)
-          |--MembTraining/: image data with manual annotations
-          |--MembValidation/: image data to be segmented
-      |--ModelCell/: trained models 
-      |--ResultCell/: Segmentation result
-          |--BothWithRandomnet/: Binary membrane segmentation from DMapNet
-          |--BothWithRandomnetPostseg/: segmented cell before and after label unifying
-          |--NucleusLoc/: nucleus location information and annotation
-          |--StatShape/: cell lineage tree (with time duration)
-      |--ShapeUtil/: utils for unifying cells and calculating robustness
-          |--AceForLabel/: multiple AceTree files for generating namedictionary
-          |--RobustStat/: nucleus lost sration and cell surface...
-          |--TemCellGraph/: temporary result for calculating surface, volume...
-        
-      |--Util/: utils for training and testing
+    you need to put the pre-trained models of EmbSAM in model_parameters as follow
+    model_parameters/
+      |--Z_axis.pth
+      |--Y_axis.pth
+      |--X_axis.pth
+      |--sam_vit_b_01ec64.pth
+
     ```
 
 
