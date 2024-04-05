@@ -16,11 +16,11 @@ In [ArXiv]
 the code is not totally uploaded and test, please do not start
 ### Dependencies and Installation
 - Python 3.11.0
-- Pytorch X.XX
+- Pytorch 2.0.1
 
 1. Create Conda Environment
 ```
-conda create --name EmbSAM python=3.XX
+conda create --name EmbSAM python=3.11.0
 conda activate EmbSAM
 conda install anaconda::git
 ```
