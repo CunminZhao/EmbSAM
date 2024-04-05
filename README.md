@@ -64,7 +64,31 @@ example1: to run EmbSAM with 190311plc1mp1_raw, you need to keep these data in
       |--sam_vit_b_01ec64.pth
     ```
 ```
-python EmbSAM.py -cfg_path ./confs/running_190311plc1mp3.txt
+python EmbSAM.py -cfg_path ./confs/running_190311plc1mp1.txt
+```
+
+example2: to run EmbSAM with 10s_data_from_guoye, you need to keep these data in
+* **Structure of data folder**: 
+    ```buildoutcfg
+    data/
+      |--10s_data_from_guoye
+    ```
+* **Structure of confs folder**: 
+    ```buildoutcfg
+    confs/
+      |--DataS1_CellTracing.csv
+      |--running_Mem.txt
+    ```
+* **Structure of model_parameters**: 
+    ```buildoutcfg
+    model_parameters/
+      |--Z_axis.pth
+      |--Y_axis.pth
+      |--X_axis.pth
+      |--sam_vit_b_01ec64.pth
+    ```
+```
+python EmbSAM.py -cfg_path ./confs/running_Mem.txt 
 ```
 
 
