@@ -1,0 +1,6 @@
+rootname=190311plc1mp3_
+CD_file=./confs/CD190311plc1mp3.csv
+time_point=[10,30,60]
+ori_shape=(512,712,68)
+raw_path=./data/190311plc1mp3_raw/
+data_shape=(256,356,160)
