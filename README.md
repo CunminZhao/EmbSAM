@@ -37,7 +37,7 @@ pip install -r ./requirement.txt
 You can refer to the following links to download the datasets
 [190311plc1mp1_raw.zip](https://drive.google.com/file/d/1SuLN8iG_siZlKvDuMIbYknOVR8WY4Axu/view?usp=drive_link), 
 [190311plc1mp3_raw.zip](https://drive.google.com/file/d/1uL9M1xOuXyR36clcs0csCi-bLYWrYdg3/view?usp=drive_link). and
-[cell_membrane_10s.zip](https://drive.google.com/file/d/1L3EkZ1URrJ6ABQoVC1Rnpt9fE4I6ssuc/view?usp=drive_link)
+[cell_membrane_10s.zip](https://drive.google.com/file/d/1t0MxzF-48Gp6BWrEhGM-abljXOTefYAC/view?usp=sharing)
 
 
 ### Pretrained Model
