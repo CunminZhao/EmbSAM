@@ -93,5 +93,10 @@ you will get your result in
 ```
 ./output_folder/result
 ```
+### Train
+```
+will be uploaded soon
+```
+
 
 to be continue...
