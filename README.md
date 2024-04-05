@@ -43,7 +43,7 @@ the pre-trained models of this project can be download here
 - The model_parameters with segment anything model(vit_b) and the image denosing model trained on x_axis, y_axis and z_axis [[model_parameters](https://drive.google.com/drive/folders/1vNp7KypEOxTXCxHLS6N4kET1M_cfBtup?usp=drive_link)]
 
 ### Test  
-example1: to run EmbSAM with 190311plc1mp1_raw, you need to put your data into
+example1: to run EmbSAM with 190311plc1mp1_raw, you need to keep these data in
 * **Structure of data folder**: 
     ```buildoutcfg
     data/
