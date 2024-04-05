@@ -11,7 +11,8 @@ In [ArXiv]
 <img width="900" alt="Ai" src="https://github.com/cuminzhao/EmbSAM/assets/80189429/9fb048d2-23f9-42e9-b954-1534ed79c84d">      
 
 
-** Fig. 1. The flowchart of EmbSAM**
+**Fig. 1. The flowchart of EmbSAM**
+**Results**: XXX 
 ## Get Started
 ### Dependencies and Installation
 - Python 3.11.0
