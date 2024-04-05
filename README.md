@@ -36,20 +36,25 @@ You can refer to the following links to download the datasets
 [190311plc1mp1_raw.zip](https://drive.google.com/file/d/1SuLN8iG_siZlKvDuMIbYknOVR8WY4Axu/view?usp=drive_link), 
 [190311plc1mp3_raw.zip](https://drive.google.com/file/d/1uL9M1xOuXyR36clcs0csCi-bLYWrYdg3/view?usp=drive_link). and
 [10s_data_from_guoye.zip](https://drive.google.com/file/d/1L3EkZ1URrJ6ABQoVC1Rnpt9fE4I6ssuc/view?usp=drive_link)
-* **Structure of data folder**: 
-    ```buildoutcfg
-    data/
-      |--190311plc1mp1_raw
-      |--190311plc1mp3_raw
-      |--10s_data_from_guoye
-      |--or your correctly named custom data 
-    ```
+
 
 ### Pretrained Model
 the pre-trained models of this project can be download here
 - The model_parameters with segment anything model(vit_b) and the image denosing model trained on x_axis, y_axis and z_axis [[model_parameters](https://drive.google.com/drive/folders/1vNp7KypEOxTXCxHLS6N4kET1M_cfBtup?usp=drive_link)]
 
-
+### Test  
+example1: to run EmbSAM with 190311plc1mp1_raw, you need to put your data into
+* **Structure of data folder**: 
+    ```buildoutcfg
+    data/
+      |--190311plc1mp1_raw
+    ```
+* **Structure of confs folder**: 
+    ```buildoutcfg
+    confs/
+      |--CD190311plc1mp1.csv
+      |--running_190311plc1mp3.txt
+    ```
 * **Structure of model_parameters**: 
     ```buildoutcfg
     model_parameters/
@@ -58,6 +63,10 @@ the pre-trained models of this project can be download here
       |--X_axis.pth
       |--sam_vit_b_01ec64.pth
     ```
+```
+python EmbSAM.py -cfg_path ./confs/running_190311plc1mp3.txt
+```
+
+
+
 to be continue...
-
-
