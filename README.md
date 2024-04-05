@@ -51,7 +51,7 @@ the pre-trained models of this project can be download here
     ```
 
 ### Test  
-example1: to run EmbSAM with 190311plc1mp1_raw, you need to keep these data in
+Example1: to run EmbSAM with 190311plc1mp1_raw, you need to keep these data in
 * **Structure of data folder**: 
     ```buildoutcfg
     data/
@@ -68,7 +68,7 @@ Then run
 python EmbSAM.py -cfg_path ./confs/running_190311plc1mp1.txt
 ```
 
-example2: to run EmbSAM with 10s_data_from_guoye, you need to keep these data in
+Example2: to run EmbSAM with 10s_data_from_guoye, you need to keep these data in
 * **Structure of data folder**: 
     ```buildoutcfg
     data/
