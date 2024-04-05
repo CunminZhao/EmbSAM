@@ -10,6 +10,13 @@ In [ArXiv]
 ## Overall
 <img width="900" alt="Ai" src="https://github.com/cuminzhao/EmbSAM/assets/80189429/9fb048d2-23f9-42e9-b954-1534ed79c84d"> 
 
+### Quantitative results
+#### Evaluation on LOL
+The evauluation results on LOL are as follows
+<img width="400" alt="Ai2" src="https://github.com/cuminzhao/EmbSAM/assets/80189429/bdd15fa1-92b4-4527-bc6e-b8e1689cecd3">
+
+
+
 ## Get Started
 the code is not totally uploaded and test, please do not start
 ### Dependencies and Installation
