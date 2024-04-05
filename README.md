@@ -30,7 +30,7 @@ conda activate EmbSAM
 3. Install Dependencies
 ```
 cd EmbSAM
-pip install -r ./requirements.txt
+pip install -r ./requirement.txt
 ```
 
 ### Dataset
