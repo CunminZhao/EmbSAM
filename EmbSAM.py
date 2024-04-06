@@ -323,7 +323,9 @@ def main(cfg_file):
 
     process_erode(opdir+'boundary_largest/', opdir+'boundary_only/')
     delete(opdir, ['boundary_largest'])
-
+    #modified
+    process_largest(opdir+'boundary_only/', opdir+'boundary_only/')
+    #here
     feature_fuse(opdir+'boundary_only/', opdir+'gaussian/', opdir+'toseg/')
     delete(opdir, ['boundary_only','gaussian'])
 
