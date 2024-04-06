@@ -1,6 +1,7 @@
 # [ArXiv] EmbSAM: Cell boundary localization and Segment Anything Model for 3D fast-growing embryos
-<br>_Cunmin Zhao, Zelin Li, Hong Yan, Chao Tang, Guoye Guan, Zhongying Zhao_<br>
+<br>_Cunmin Zhao<sup>#</sup>, Zelin Li<sup>#</sup>, Hong Yan, Chao Tang, Guoye Guan, Zhongying Zhao_<br>
 In [ArXiv]  
+<sup>#</sup> equal contribution
 
 **Motivations**: XXX  
 **Results**: XXX
