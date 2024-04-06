@@ -26,8 +26,12 @@ def divide_embryo(npz_file_path, coordinate, output_name, output_directory, targ
     nii_data = npz_data['arr_0']
     x, y, z = coordinate
     target_value = nii_data[x, y, z]
-    nii_data[nii_data != target_value] = 0
-
+    #modified
+    if target_value!=0:
+        nii_data[nii_data != target_value] = 0
+    else:
+        nii_data[nii_data != 0] = 0
+    #here
     zoom_factors = [t / float(s) for t, s in zip(target_shape, nii_data.shape)]
     resized_data = zoom(nii_data, zoom_factors, order=1)
     resized_data[resized_data != 0] = target_value
