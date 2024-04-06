@@ -68,24 +68,20 @@ def find_string_in_csv(search_string, csv_file_path):
 
 def get_adjacent_element(csv_file_path, positions):
     if not positions:
-        return None  # positions为空，无法提供相邻元素
+        return None  
 
-    # 获取第一个位置的行号和列号
-    row_index, column_index = positions[0]
     
-    # 根据行号的奇偶性决定新的行号
-    if row_index % 2 == 1:  # 如果是奇数行
+    row_index, column_index = positions[0]
+
+    if row_index % 2 == 1:  
         new_row_index = row_index + 1
-    else:  # 如果是偶数行
+    else:  
         new_row_index = row_index - 1
 
-    # 读取CSV文件并尝试获取相邻元素
     with open(csv_file_path, newline='', encoding='utf-8') as csvfile:
         csv_reader = list(csv.reader(csvfile))
-        # 确保新的行号在范围内
         if 0 <= new_row_index < len(csv_reader):
             adjacent_element = csv_reader[new_row_index][column_index]
-            # 去除元素的头部"b'"和尾部"'"
             if adjacent_element.startswith("b'") and adjacent_element.endswith("'"):
                 return adjacent_element[2:-1]
             else:
