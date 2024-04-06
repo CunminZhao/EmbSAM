@@ -271,7 +271,7 @@ def main(cfg_file):
     ##
     modify_config(opdir+'Z/','./model_parameters/Z_axis.pth','./confs/LOL_smallNet.yml')
     enhance(cfgpath='./confs/LOL_smallNet.yml', out_dir=opdir+'Z_result')
-    print("cell boundary enhancement done")
+    print("images denosing done")
     print("-------------------------post-processing-------------------------")
     increase_contrast(result_X,0,2)
     increase_contrast(result_Y,0,2)
