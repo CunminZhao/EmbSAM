@@ -63,7 +63,7 @@ the pre-trained models of this project can be download here
     ```buildoutcfg
     confs/
       |--CD190311plc1mp1.csv
-      |--running_190311plc1mp3.txt
+      |--running_190311plc1mp1.txt
       ...
       |--other running confs
     ```
