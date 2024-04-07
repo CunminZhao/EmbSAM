@@ -237,21 +237,24 @@ def main(cfg_file):
         print(tif2niigz(raw_path, nii_path, specific_string,rootname,data_shape))
 
     print_shapes(nii_path)
+    print("-------------------------rescale_intensity-------------------------")
+    process_rescale_intensity(nii_path, nii_path)
+    print("rescale_intensity contrast")
 
     #convert nii to png in (x,y,z) for cell boundary enhancement
     nii2png(nii_path,output_X,0)
     nii2png(nii_path,output_Y,1)
     nii2png(nii_path,output_Z,2)
     
-    print("-------------------------increasing_contrast-------------------------")
-    increase_contrast(output_X,100,1.67)
-    increase_contrast(output_Y,100,1.67)
-    increase_contrast(output_Z,100,1.67)
+    #print("-------------------------increasing_contrast-------------------------")
+    #increase_contrast(output_X,100,1.67)
+    #increase_contrast(output_Y,100,1.67)
+    #increase_contrast(output_Z,100,1.67)
     
-    increase_contrast(output_X,0,3)
-    increase_contrast(output_Y,0,3)
-    increase_contrast(output_Z,0,3)
-    print("processed contrast")
+    #increase_contrast(output_X,0,3)
+    #increase_contrast(output_Y,0,3)
+    #increase_contrast(output_Z,0,3)
+    #print("processed contrast")
 
     print("-------------------------processing images-------------------------")
     gray2RBG(output_X)
