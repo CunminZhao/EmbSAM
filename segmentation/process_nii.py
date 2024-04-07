@@ -10,7 +10,7 @@ from skimage.exposure import rescale_intensity
 
 
 #modified
-def process_rescale_intensity(input_folder, output_folder):
+def process_rescale_intensity(input_folder, output_folder,scale):
     
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
@@ -21,7 +21,7 @@ def process_rescale_intensity(input_folder, output_folder):
         img_data = img.get_fdata()
         v_min, v_max = np.percentile(img_data, (0.2, 99.9))
         #img_rescaled = rescale_intensity(img_data, in_range=(v_min, v_max), out_range=(0, 255.0))
-        img_rescaled = rescale_intensity(img_data, in_range=(v_min, v_max), out_range=(0, 150.0))
+        img_rescaled = rescale_intensity(img_data, in_range=(v_min, v_max), out_range=(0, scale))
         img_rescaled = img_rescaled.astype(np.uint8)
         new_img = nib.Nifti1Image(img_rescaled, img.affine, img.header)
         file_name = os.path.basename(file_path)
