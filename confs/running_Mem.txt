@@ -4,4 +4,4 @@ time_point=[50,150,250]
 ori_shape=(512, 712,47)
 raw_path=./data/cell_membrane_10s/
 data_shape=(256,356,154)
-scale=140.0
+scale=120.0
