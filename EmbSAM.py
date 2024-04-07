@@ -208,6 +208,7 @@ def main(cfg_file):
     ori_shape=config_params['ori_shape']
     raw_path=config_params['raw_path']
     data_shape=config_params['data_shape']
+    scale=float(config_params['scale'])
     ratio=(ori_shape[0]/data_shape[0], ori_shape[1]/data_shape[1], data_shape[2]/ori_shape[2])
     nii_path = './nii_folder'
     opdir='./output_folder/'
@@ -229,6 +230,7 @@ def main(cfg_file):
     print(ori_shape)
     print(raw_path)
     print(data_shape)
+    print(scale)
 
     
     #convert tif to niigz
@@ -238,7 +240,7 @@ def main(cfg_file):
 
     print_shapes(nii_path)
     print("-------------------------rescale_intensity-------------------------")
-    process_rescale_intensity(nii_path, nii_path)
+    process_rescale_intensity(nii_path, nii_path, scale)
     print("rescale_intensity done")
 
     #convert nii to png in (x,y,z) for cell boundary enhancement
