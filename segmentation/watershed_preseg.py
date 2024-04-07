@@ -146,7 +146,8 @@ def run_membrane2cell(seg_memb_root_dir, embryo_names,is_one_by_one=False):
         else:
             mp_cpu_num = int(mp.cpu_count()/2)
             #mp_cpu_num=20
-            print('all cpu process is ', mp.cpu_count(), 'we created ', mp_cpu_num)
+            #print('all cpu process is ', mp.cpu_count(), 'we created ', mp_cpu_num)
+            print('all cpu process is ', mp.cpu_count(), 'we created ', min(len(parameters),mp_cpu_num))
             mpPool = mp.Pool(min(len(parameters),mp_cpu_num))
             for _ in tqdm(mpPool.imap_unordered(instance_seg_for_binary, parameters), total=len(parameters),
                           desc="{} membrane --> cell, all cpu process is {}, we created {}".format(embryo_name,
