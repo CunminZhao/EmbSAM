@@ -93,7 +93,9 @@ def nii2png(input_folder, output_folder, Int):
                     slice_data = data[:, i, :]    
                 if(int(Int)==2):
                     slice_data = data[:, :, i]
-                    
+                #modified 
+                slice_data[slice_data < 50] = 0
+                #here
                 slice_data = slice_data.astype(np.uint8)
                 img = Image.fromarray(slice_data)  
                 img_save_path = os.path.join(output_folder, f'{base_filename}_slice_{i:03d}.png')
