@@ -4,3 +4,4 @@ time_point=[10,30,60]
 ori_shape=(512,712,68)
 raw_path=./data/190311plc1mp1_raw/
 data_shape=(256,356,160)
+scale=255.0
