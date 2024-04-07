@@ -6,7 +6,27 @@ from PIL import Image
 import cv2
 import glob
 from scipy.ndimage import zoom
+from skimage.exposure import rescale_intensity
 
+
+#modified
+def process_rescale_intensity(input_folder, output_folder):
+    
+    if not os.path.exists(output_folder):
+        os.makedirs(output_folder)
+
+    file_paths = sorted(glob.glob(os.path.join(input_folder, '*.nii.gz')))
+    for file_path in file_paths:
+        img = nib.load(file_path)
+        img_data = img.get_fdata()
+        v_min, v_max = np.percentile(img_data, (0.2, 99.9))
+        img_rescaled = rescale_intensity(img_data, in_range=(v_min, v_max), out_range=(0, 255.0))
+        img_rescaled = img_rescaled.astype(np.uint8)
+        new_img = nib.Nifti1Image(img_rescaled, img.affine, img.header)
+        file_name = os.path.basename(file_path)
+        output_file_path = os.path.join(output_folder, file_name)
+        nib.save(new_img, output_file_path)
+#here
 
 
 def tif2niigz(input_folder, output_folder, specific_string, root_name, target_shape):
