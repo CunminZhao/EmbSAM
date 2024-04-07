@@ -239,7 +239,7 @@ def main(cfg_file):
     print_shapes(nii_path)
     print("-------------------------rescale_intensity-------------------------")
     process_rescale_intensity(nii_path, nii_path)
-    print("rescale_intensity contrast")
+    print("rescale_intensity done")
 
     #convert nii to png in (x,y,z) for cell boundary enhancement
     nii2png(nii_path,output_X,0)
