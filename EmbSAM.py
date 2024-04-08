@@ -317,7 +317,8 @@ def main(cfg_file):
     process_gaussian(opdir+'denoised', opdir+'gaussian',2,0.5)
     delete(opdir, ['denoised'])
 
-    process_gaussian(nii_path, opdir+'boundary',5,0.3)
+    #process_gaussian(nii_path, opdir+'boundary',5,0.3)
+    process_gaussian(nii_path, opdir+'boundary',5,0.5)
 
     process_largest(opdir+'boundary/', opdir+'boundary_largest/')
     delete(opdir, ['boundary'])
