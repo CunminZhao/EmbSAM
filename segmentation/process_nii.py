@@ -46,6 +46,14 @@ def tif2niigz(input_folder, output_folder, specific_string, root_name, target_sh
     combined_matrix = np.stack(image_matrices, axis=-1)
     #combined_matrix[:, :, :Tuple[0]] = 0
     #combined_matrix[:, :, Tuple[1]:] = 0
+    ####modify here
+    z_dim = combined_matrix.shape[2]
+    lower_index = int(np.ceil(z_dim * 0.15))
+    upper_index = int(np.floor(z_dim * 0.85))
+    
+    combined_matrix[:, :, :lower_index] = 0
+    combined_matrix[:, :, upper_index:] = 0
+    ####modify here
     #print(combined_matrix.shape)
     
     zoom_factors = [t / float(s) for t, s in zip(target_shape, combined_matrix.shape)]
