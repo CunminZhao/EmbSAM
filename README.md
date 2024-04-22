@@ -4,7 +4,8 @@ In [ArXiv]
 <sup>#</sup> Equal contribution,
 <sup>*</sup> Correspondence Author.
 
-**Motivations**: Develop a general SAM method for cellular segmentation of live embryos.
+**Motivations**: Fluorescence imaging on cell membranes would exhibit a low signal-to-noise ratio (SNR) under common experimental conditions. As embryonic development involves cell deformation, migration, division, and differentiation as fast as seconds to minutes, customized fluorescence imaging at high temporal resolution requests a weak laser intensity to limit photobleaching and phototoxicity, leading to a low SNR that impedes three-dimensional (3D) shape reconstruction across cellular to organismic scales.![image](https://github.com/cuminzhao/EmbSAM/assets/80189429/aa366ac5-f5c1-41e7-bb8c-5a101f97e3a1)
+
 **Results**: XXX
 
 
