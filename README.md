@@ -56,23 +56,23 @@ the pre-trained models of this project can be downloaded here
     ```
 
 ### Test  
-**Example1**: to run EmbSAM with 190311plc1mp1_raw, you need to keep these data in
+**Example1**: to run EmbSAM with Emb1_raw, you need to keep these data in
 * **Structure of data folder**: 
     ```buildoutcfg
     data/
-      |--190311plc1mp1_raw/*.tif
+      |--Emb1_raw/*.tif
     ```
 * **Structure of confs folder**: 
     ```buildoutcfg
     confs/
-      |--CD190311plc1mp1.csv
-      |--running_190311plc1mp1.txt
+      |--Emb1_CellTracing.csv
+      |--running_Emb1.txt
       ...
       |--other running confs
     ```
 Then run
 ```
-python EmbSAM.py -cfg_path ./confs/running_190311plc1mp1.txt
+python EmbSAM.py -cfg_path ./confs/running_Emb1.txt
 ```
 
 **Example2**: to run EmbSAM with cell_membrane_10s, you need to keep these data in
