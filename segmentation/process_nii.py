@@ -48,8 +48,10 @@ def tif2niigz(input_folder, output_folder, specific_string, root_name, target_sh
     #combined_matrix[:, :, Tuple[1]:] = 0
     ####modify here
     z_dim = combined_matrix.shape[2]
-    lower_index = int(np.ceil(z_dim * 0.2))
-    upper_index = int(np.floor(z_dim * 0.9))
+    #lower_index = int(np.ceil(z_dim * 0.2))
+    #upper_index = int(np.floor(z_dim * 0.9))
+    lower_index = int(np.ceil(z_dim * 0.02))
+    upper_index = int(np.floor(z_dim * 0.99))
     
     combined_matrix[:, :, :lower_index] = 0
     combined_matrix[:, :, upper_index:] = 0
