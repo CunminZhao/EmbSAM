@@ -209,6 +209,8 @@ def main(cfg_file):
     raw_path=config_params['raw_path']
     data_shape=config_params['data_shape']
     scale=float(config_params['scale'])
+    #cutoff_lower=config_params['cutoff_lower']
+    #cutoff_upper=config_params['cutoff_upper']
     ratio=(ori_shape[0]/data_shape[0], ori_shape[1]/data_shape[1], data_shape[2]/ori_shape[2])
     nii_path = './nii_folder'
     opdir='./output_folder/'
@@ -315,9 +317,11 @@ def main(cfg_file):
 
     print("process_gaussian...")
     process_gaussian(opdir+'denoised', opdir+'gaussian',2,0.5)
+    #process_gaussian(opdir+'denoised', opdir+'gaussian',2,0.5, cutoff_lower, cutoff_upper)
     delete(opdir, ['denoised'])
 
     process_gaussian(nii_path, opdir+'boundary',5,0.3)
+    #process_gaussian(nii_path, opdir+'boundary',5,0.3, cutoff_lower, cutoff_upper)
     #process_gaussian(nii_path, opdir+'boundary',5,0.5)
 
     process_largest(opdir+'boundary/', opdir+'boundary_largest/')
