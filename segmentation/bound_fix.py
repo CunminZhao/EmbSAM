@@ -32,7 +32,7 @@ def gaussian(input_path, output_path, smooth_factor=2, cutoff=0.5, lower_factor=
 
 
 
-def process_gaussian(input_folder, output_folder,p1,p2):
+def process_gaussian(input_folder, output_folder,p1,p2, lower_factor=0.2, upper_factor=0.9):
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
@@ -41,7 +41,7 @@ def process_gaussian(input_folder, output_folder,p1,p2):
             input_filepath = os.path.join(input_folder, file_name)
             output_filepath = os.path.join(output_folder, file_name)
 
-            gaussian(input_filepath, output_filepath,p1,p2)
+            gaussian(input_filepath, output_filepath,p1,p2, lower_factor, upper_factor)
 
 
 
