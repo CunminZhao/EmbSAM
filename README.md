@@ -8,9 +8,8 @@ In [ArXiv]
 **Results**: We devised a computational framework, EmbSAM, which incorporates a deep-learning-based cell boundary localization algorithm and the Segment Anything Model. With the nematode Caenorhabditis elegans embryos, EmbSAM outperforms the latest cell segmentation tools and rebuilds all the 3D cell shapes up to the gastrulation onset at 10-second intervals. The outputted data can clearly illustrate cell shape changes related to cell division, body axis establishment, and cell migration.  
 
 
-
 ## Overall
-<img width="900" alt="Ai" src="https://github.com/cuminzhao/EmbSAM/assets/80189429/c59d7d4f-e53f-44a7-8a9c-5f2efec8df19">      
+<img width="900" alt="Ai" src="https://github.com/cuminzhao/EmbSAM/assets/80189429/f34bbc3d-dc4d-4f06-ad81-281ff7b766b0">      
 
 
 **Fig. 1. The flowchart of EmbSAM**
