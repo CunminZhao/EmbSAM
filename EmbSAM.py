@@ -233,6 +233,8 @@ def main(cfg_file):
     print(raw_path)
     print(data_shape)
     print(scale)
+    print(cutoff_lower)
+    print(cutoff_upper)
 
     
     #convert tif to niigz
