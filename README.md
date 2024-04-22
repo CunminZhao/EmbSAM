@@ -75,25 +75,6 @@ Then run
 python EmbSAM.py -cfg_path ./confs/running_Emb1.txt
 ```
 
-**Example2**: to run EmbSAM with Emb4_raw, you need to keep these data in
-* **Structure of data folder**: 
-    ```buildoutcfg
-    data/
-      |--/Emb4_raw/*.tif
-    ```
-* **Structure of confs folder**: 
-    ```buildoutcfg
-    confs/
-      |--Emb4_CellTracing.csv
-      |--running_Emb4.txt
-      ...
-      |--other running confs
-    ```
-Then run
-```
-python EmbSAM.py -cfg_path ./confs/running_Emb4.txt
-```
-
 you will get your result in 
 ```
 ./output_folder/result
