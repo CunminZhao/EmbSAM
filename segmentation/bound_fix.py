@@ -8,14 +8,14 @@ import glob
 
 
 
-def gaussian(input_path, output_path, smooth_factor=2, cutoff=0.5):
+def gaussian(input_path, output_path, smooth_factor=2, cutoff=0.5, lower_factor=0.2, upper_factor=0.9):
     img = nib.load(input_path)
     data = img.get_fdata()
 
     ##
     z_dim = data.shape[2]
-    lower_index = int(np.ceil(z_dim * 0.2))
-    upper_index = int(np.floor(z_dim * 0.9))
+    lower_index = int(np.ceil(z_dim * lower_factor))
+    upper_index = int(np.floor(z_dim * upper_factor))
     
     data[:, :, :lower_index] = 0
     data[:, :, upper_index:] = 0
