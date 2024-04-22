@@ -209,8 +209,8 @@ def main(cfg_file):
     raw_path=config_params['raw_path']
     data_shape=config_params['data_shape']
     scale=float(config_params['scale'])
-    cutoff_lower=config_params['cutoff_lower']
-    cutoff_upper=config_params['cutoff_upper']
+    cutoff_lower=float(config_params['cutoff_lower'])
+    cutoff_upper=float(config_params['cutoff_upper'])
     ratio=(ori_shape[0]/data_shape[0], ori_shape[1]/data_shape[1], data_shape[2]/ori_shape[2])
     nii_path = './nii_folder'
     opdir='./output_folder/'
