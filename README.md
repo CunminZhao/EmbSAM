@@ -1,9 +1,10 @@
 # [ArXiv] EmbSAM: Cell boundary localization and Segment Anything Model for 3D fast-growing embryos
-<br>_Cunmin Zhao<sup>#</sup>, Zelin Li<sup>#</sup>, Hong Yan, Chao Tang, Guoye Guan, Zhongying Zhao_<br>
+<br>_Cunmin Zhao<sup>#</sup>, Zelin Li<sup>#</sup>, Hong Yan, Chao Tang, Guoye Guan<sup>\*</sup>, Zhongying Zhao<sup>\*</sup>_<br>
 In [ArXiv]  
-<sup>#</sup> equal contribution
+<sup>#</sup> Equal contribution.
+<sup>*</sup> Correspondence Author.
 
-**Motivations**: XXX  
+**Motivations**: Develop a general SAM method for cellular segmentation of live embryos.
 **Results**: XXX
 
 
@@ -41,8 +42,8 @@ You can refer to the following links to download the datasets
 [cell_membrane_10s.zip](https://drive.google.com/file/d/1t0MxzF-48Gp6BWrEhGM-abljXOTefYAC/view?usp=sharing)
 
 
-### Pretrained Model
-the pre-trained models of this project can be download here
+### Pre-trained Model
+the pre-trained models of this project can be downloaded here
 - The model_parameters with segment anything model(vit_b) and the image denosing model trained on x_axis, y_axis and z_axis [[model_parameters](https://drive.google.com/drive/folders/1vNp7KypEOxTXCxHLS6N4kET1M_cfBtup?usp=drive_link)]. You need to download these parameters and put them into model_parameters.
 * **Structure of model_parameters**: 
     ```buildoutcfg
