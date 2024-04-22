@@ -75,23 +75,23 @@ Then run
 python EmbSAM.py -cfg_path ./confs/running_Emb1.txt
 ```
 
-**Example2**: to run EmbSAM with cell_membrane_10s, you need to keep these data in
+**Example2**: to run EmbSAM with Emb4_raw, you need to keep these data in
 * **Structure of data folder**: 
     ```buildoutcfg
     data/
-      |--/cell_membrane_10s/*.tif
+      |--/Emb4_raw/*.tif
     ```
 * **Structure of confs folder**: 
     ```buildoutcfg
     confs/
-      |--DataS1_CellTracing.csv
-      |--running_Mem.txt
+      |--Emb4_CellTracing.csv
+      |--running_Emb4.txt
       ...
       |--other running confs
     ```
 Then run
 ```
-python EmbSAM.py -cfg_path ./confs/running_Mem.txt 
+python EmbSAM.py -cfg_path ./confs/running_Emb4.txt
 ```
 
 you will get your result in 
