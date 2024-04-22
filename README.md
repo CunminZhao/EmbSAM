@@ -9,9 +9,8 @@ In [ArXiv]
 
 
 
-
 ## Overall
-<img width="900" alt="Ai" src="https://github.com/cuminzhao/EmbSAM/assets/80189429/9fb048d2-23f9-42e9-b954-1534ed79c84d">      
+<img width="900" alt="Ai" src="https://github.com/cuminzhao/EmbSAM/assets/80189429/c59d7d4f-e53f-44a7-8a9c-5f2efec8df19">      
 
 
 **Fig. 1. The flowchart of EmbSAM**
