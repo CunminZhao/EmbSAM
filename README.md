@@ -99,9 +99,6 @@ you will get your result in
 ./output_folder/result
 ```
 
-## To do list
-- [ ] add Training script for custom dataset
-- [ ] add script to calculate the Dice and Hausdroff
 ## Acknowledgement
 - The design of the segmentation algorithm is inspired by [CShaper](https://github.com/cao13jf/CShaper) and [MedLSAM](https://github.com/openmedlab/MedLSAM).
 - A part of code is modified from [llflow](https://github.com/wyf0912/LLFlow).
