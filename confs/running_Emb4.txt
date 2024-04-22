@@ -1,0 +1,9 @@
+rootname=Emb4_
+CD_file=./confs/Emb4_CellTracing.csv
+time_point=[1, 100, 200 , 260]
+ori_shape=(512, 712,47)
+raw_path=./data/Emb4_raw
+data_shape=(256,356,154)
+scale=140.0
+cutoff_lower=0.2
+cutoff_upper=0.9
