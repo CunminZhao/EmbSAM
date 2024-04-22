@@ -1,7 +1,7 @@
 # [ArXiv] EmbSAM: Cell boundary localization and Segment Anything Model for 3D fast-growing embryos
 <br>_Cunmin Zhao<sup>#</sup>, Zelin Li<sup>#</sup>, Hong Yan, Chao Tang, Guoye Guan<sup>\*</sup>, Zhongying Zhao<sup>\*</sup>_<br>
 In [ArXiv]  
-<sup>#</sup> Equal contribution.
+<sup>#</sup> Equal contribution,
 <sup>*</sup> Correspondence Author.
 
 **Motivations**: Develop a general SAM method for cellular segmentation of live embryos.
