@@ -86,7 +86,7 @@ you will get your result in
 
 * The effective GUIData visualization is shown below:
 
-    *  <img width="900" alt="Ai" src="https://github.com/cuminzhao/EmbSAM/assets/figures_readme/guidata_emb5.png">  
+    *  <img width="900" alt="GUIDATA_SHOW" src="./figures_readme/guidata_emb5.png">  
 
 ## Acknowledgement
 - The design of the segmentation algorithm is inspired by [CShaper](https://github.com/cao13jf/CShaper) and [MedLSAM](https://github.com/openmedlab/MedLSAM).
