@@ -8,7 +8,7 @@ In [ArXiv]
 **Results**: We devised a computational framework, EmbSAM, which incorporates a deep-learning-based cell boundary localization algorithm and the Segment Anything Model. With the nematode Caenorhabditis elegans embryos, EmbSAM outperforms the latest cell segmentation tools and rebuilds all the 3D cell shapes up to the gastrulation onset at 10-second intervals. The outputted data can clearly illustrate cell shape changes related to cell division, body axis establishment, and cell migration.  
 
 
-## Overall
+## Overview
 <img width="900" alt="Ai" src="https://github.com/cuminzhao/EmbSAM/assets/80189429/f34bbc3d-dc4d-4f06-ad81-281ff7b766b0">      
 
 
@@ -79,6 +79,14 @@ you will get your result in
 ```
 ./output_folder/result
 ```
+
+## Provided Data
+
+* The GUIData including raw 3D images and the cell-resolved segmented digitized images, which could open with our visualization app [ITK-SNAP-CVE](https://figshare.com/s/fc9b67e91a38eea86bee) from [CMap paper](https://www.biorxiv.org/content/10.1101/2023.11.20.567849v1), can be downloaded [Online](https://portland-my.sharepoint.com/:f:/g/personal/zelinli6-c_my_cityu_edu_hk/EvfDmX8rLM1PoZq-XxKSAnABonH3Rdl5TCD2WqbebrdVMg?e=XdrEYI).
+
+* The effective GUIData visualization is shown below:
+
+    *  <img width="900" alt="Ai" src="https://github.com/cuminzhao/EmbSAM/assets/figures_readme/guidata_emb5.png">  
 
 ## Acknowledgement
 - The design of the segmentation algorithm is inspired by [CShaper](https://github.com/cao13jf/CShaper) and [MedLSAM](https://github.com/openmedlab/MedLSAM).
