@@ -56,11 +56,11 @@ the pre-trained models of this project can be downloaded here
     ```
 
 ### Test  
-**Example**: to run *EmbSAM* with Emb1_raw, you need to keep these data in
+**Example**: to run *EmbSAM* with Emb1_Raw, you need to keep these data in
 * **Structure of data folder**: 
     ```buildoutcfg
     data/
-      |--Emb1_raw/*.tif
+      |--Emb1_Raw/*.tif
     ```
 * **Structure of confs folder**: 
     ```buildoutcfg
