@@ -84,7 +84,7 @@ you will get your result in
 ## Provided Data
 * All the 5 embryo samples processed in this paper are digitized into the format customized to our visualization software *ITK-SNAP-CVE* from [https://doi.org/10.1101/2023.11.20.567849](https://doi.org/10.1101/2023.11.20.567849), and can be downloaded [online](https://doi.org/10.6084/m9.figshare.24768921.v2).  
 
-* The effective GUIData visualization is shown below:
+* The effective visualization is shown below:
 
     *  <img width="900" alt="GUIDATA_SHOW" src="./figures_readme/guidata_emb5.png">  
 
