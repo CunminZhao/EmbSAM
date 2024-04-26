@@ -82,7 +82,7 @@ you will get your result in
 ```
 
 ## Provided Data
-* All the 5 embryo samples processed in this paper are digitized into the format customized to our visualization software *ITK-SNAP-CVE* from [https://doi.org/10.1101/2023.11.20.567849](https://doi.org/10.1101/2023.11.20.567849) and [https://doi.org/10.6084/m9.figshare.24768921.v2](https://doi.org/10.6084/m9.figshare.24768921.v2), and can be downloaded online.  
+* All the 5 embryo samples processed in this paper are digitized into the format customized to our visualization software *ITK-SNAP-CVE* from [https://doi.org/10.1101/2023.11.20.567849](https://doi.org/10.1101/2023.11.20.567849), and can be downloaded [online](https://doi.org/10.6084/m9.figshare.24768921.v2).  
 
 * The GUIData including raw 3D images and the cell-resolved segmented digitized images, which could open with our visualization app [ITK-SNAP-CVE](https://figshare.com/s/fc9b67e91a38eea86bee) from [CMap paper](https://www.biorxiv.org/content/10.1101/2023.11.20.567849v1), can be downloaded [Online](https://portland-my.sharepoint.com/:f:/g/personal/zelinli6-c_my_cityu_edu_hk/EvfDmX8rLM1PoZq-XxKSAnABonH3Rdl5TCD2WqbebrdVMg?e=XdrEYI).
 
