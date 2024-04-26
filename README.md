@@ -70,6 +70,7 @@ the pre-trained models of this project can be downloaded here
       ...
       |--other running confs
     ```
+    the tracing result of 5 embryos' cell nucleus fluorescence are saved in confs
 Then run
 ```
 python EmbSAM.py -cfg_path ./confs/running_Emb1.txt
