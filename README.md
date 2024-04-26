@@ -86,9 +86,7 @@ you will get your result in
 
 * The effective visualization is shown below:
 
-
-
-    *  <img width="900" alt="GUIDATA_SHOW" src="https://github.com/cuminzhao/EmbSAM/assets/80189429/390bc7ae-bafc-4bcb-873d-c4e947c33913">  
+    *  <img width="900" alt="GUIDATA_SHOW" src="https://github.com/cuminzhao/EmbSAM/assets/80189429/ef30e2dd-e29d-4e0d-bf2f-cdb01b254ed0">  
 
 ## Acknowledgement
 - We appreciate several previous works for their algorithms and datasets related/helpful to this project, including [*CShaper*](https://doi.org/10.1038/s41467-020-19863-x), [*CMap*](https://doi.org/10.1101/2023.11.20.567849), [*LLFlow*](
