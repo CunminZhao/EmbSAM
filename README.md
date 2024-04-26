@@ -65,12 +65,11 @@ the pre-trained models of this project can be downloaded here
 * **Structure of confs folder**: 
     ```buildoutcfg
     confs/
-      |--Emb1_CellTracing.csv
+      |--Emb1_CellTracing.csv(the tracing result of 5 embryos' cell nucleus fluorescence are saved in confs)
       |--running_Emb1.txt
       ...
       |--other running confs
     ```
-    the tracing result of 5 embryos' cell nucleus fluorescence are saved in confs
 Then run
 ```
 python EmbSAM.py -cfg_path ./confs/running_Emb1.txt
