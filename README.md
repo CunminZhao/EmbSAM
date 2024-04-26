@@ -89,6 +89,5 @@ you will get your result in
     *  <img width="900" alt="GUIDATA_SHOW" src="./figures_readme/guidata_emb5.png">  
 
 ## Acknowledgement
-- The design of the segmentation algorithm is inspired by [CShaper](https://github.com/cao13jf/CShaper) and [MedLSAM](https://github.com/openmedlab/MedLSAM).
-- A part of code is modified from [llflow](https://github.com/wyf0912/LLFlow).
-- We thank Meta AI for making the source code of [segment anything](https://github.com/facebookresearch/segment-anything) publicly available.
+- We appreciate several previous works for their algorithms and datasets related/helpful to this project, including [*CShaper*], [*CMap*], [*LLFlow*], [*3DMMS*], [*MedLSAM*], [*Segment Anything*].
+
