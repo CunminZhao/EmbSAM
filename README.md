@@ -89,5 +89,8 @@ you will get your result in
     *  <img width="900" alt="GUIDATA_SHOW" src="./figures_readme/guidata_emb5.png">  
 
 ## Acknowledgement
-- We appreciate several previous works for their algorithms and datasets related/helpful to this project, including [*CShaper*], [*CMap*], [*LLFlow*], [*3DMMS*], [*MedLSAM*], [*Segment Anything*].
+- We appreciate several previous works for their algorithms and datasets related/helpful to this project, including [*CShaper*](https://doi.org/10.1038/s41467-020-19863-x), [*CMap*](https://doi.org/10.1101/2023.11.20.567849), [*LLFlow*](
+https://doi.org/10.48550/arXiv.2109.05923), [*3DMMS*](https://doi.org/10.1186/s12859-019-2720-x), [*MedLSAM*](
+https://doi.org/10.48550/arXiv.2306.14752), [*Segment Anything*](
+https://doi.org/10.48550/arXiv.2304.02643).
 
