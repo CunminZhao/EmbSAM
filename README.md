@@ -26,7 +26,7 @@ conda install anaconda::git
 ```
 2. Clone Repo
 ```
-git clone https://github.com/cuminzhao/EmbSAM.git
+git clone https://github.com/cunminzhao/EmbSAM.git
 ```
 3. Install Dependencies
 ```
