@@ -1,11 +1,11 @@
 # [*arXiv*] *EmbSAM*: Cell boundary localization and Segment Anything Model for 3D fast-growing embryos
-<br>_Cunmin Zhao<sup>#</sup>, Zelin Li<sup>#</sup>, Yixuan Chen, Ming-Kin Wong, Lu-Yan Chan, Hong Yan, Chao Tang, Guoye Guan<sup>\*</sup>, Zhongying Zhao<sup>\*</sup>_<br>
+<br>_Cunmin Zhao<sup>#</sup>, Zelin Li<sup>#</sup>, Pei Zhang, Yixuan Chen, Pohao Ye, Ming-Kin Wong, Lu-Yan Chan, Hong Yan, Chao Tang, Guoye Guan<sup>\*</sup>, Zhongying Zhao<sup>\*</sup>_<br>
 In [*arXiv*]  
 <sup>#</sup> Equal contribution,
 <sup>*</sup> Correspondence Author.
 
-**Motivations**: Fluorescence imaging on cell membranes would exhibit a low signal-to-noise ratio (SNR) under common experimental conditions. As embryonic development involves cell deformation, migration, division, and differentiation as fast as seconds to minutes, customized fluorescence imaging at high temporal resolution requests a weak laser intensity to limit photobleaching and phototoxicity, leading to a low SNR that impedes three-dimensional (3D) shape reconstruction across cellular to organismic scales.  
-**Results**: We devised a computational framework, *EmbSAM*, which incorporates a deep-learning-based cell boundary localization algorithm and the Segment Anything Model. With the nematode Caenorhabditis elegans embryos, *EmbSAM* outperforms the latest cell segmentation tools and rebuilds all the 3D cell shapes up to the gastrulation onset at 10-second intervals. The outputted data can clearly illustrate cell shape changes related to cell division, body axis establishment, and cell migration.  
+**Motivations**: Cellular shape dynamics are critical for understanding cell fate determination and organogenesis during development. However, fluorescence live-cell images of cell membranes frequently suffer from a low signal-to-noise ratio, especially during long-duration imaging with high spatiotemporal resolutions. This is caused by phototoxicity and photobleaching, which limit laser power and hinder effective time-lapse cell shape reconstruction, particularly in rapidly developing embryos. 
+**Results**: We devised a new computational framework, EmbSAM, that incorporates a deep-learning-based cell boundary localization algorithm and the Segment Anything Model. EmbSAM enables accurate and robust three-dimensional (3D) cell membrane segmentation for roundworm Caenorhabditis elegans embryos imaged every 10 seconds. The cell shape data prior to gastrulation quantitatively characterizes a series of cell-division-coupled morphodynamics associated with cell position, cell identity, lineage, and fate, and can be accessed locally and online. The framework also exhibits potential in segmenting and quantifying the fluorescence labeling various cell-membraned-attached molecules in both wild-type and RNAi-treated embryos.
 
 
 ## Overview
