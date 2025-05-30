@@ -128,14 +128,24 @@ def calculate_cell_surface_and_contact_points(config):
 
 if __name__ == '__main__':
     # is_generate_cell_wise_gui_data= True # depulicate all raw images and segmented files for ITK-SNAP-CVE software
-    # is_generate_fate_wise_gui_data= True # depulicate all raw images and segmented files for ITK-SNAP-CVE software
 
     # =====================calculate volume surface contact=====================================
-    embryo_names = ['Emb1','Emb2','Emb3','Emb4','Emb5']
+    # embryo_names = ['Emb1','Emb2','Emb3','Emb4','Emb5']
+    #bias_this=0
 
-    cell_identity_assigned_path = r'C:\Users\zelinli6\OneDrive - City University of Hong Kong - Student\Documents\02paper cunmin segmentation\EmbSAM\seg_result\seg_cell'
-    annotated_root_path = r'C:\Users\zelinli6\OneDrive - City University of Hong Kong - Student\Documents\02paper cunmin segmentation\EmbSAM\seg_result\cd files'
-    name_dictionary_path = r'C:\Users\zelinli6\OneDrive - City University of Hong Kong - Student\Documents\02paper cunmin segmentation\EmbSAM\seg_result\name_dictionary.csv'
+    embryo_names = ['Uncompressed2']
+    bias_this=117
+
+    # embryo_names = ['compress1', 'Compressed2', 'Uncompressed1']
+    # bias_this=0
+
+    # cell_identity_assigned_path = r'C:\Users\zelinli6\OneDrive - City University of Hong Kong - Student\Documents\02paper cunmin segmentation\EmbSAM\seg_result\seg_cell'
+    # annotated_root_path = r'C:\Users\zelinli6\OneDrive - City University of Hong Kong - Student\Documents\02paper cunmin segmentation\EmbSAM\seg_result\cd files'
+    # name_dictionary_path = r'C:\Users\zelinli6\OneDrive - City University of Hong Kong - Student\Documents\02paper cunmin segmentation\EmbSAM\seg_result\name_dictionary.csv'
+
+    cell_identity_assigned_path = r'H:\EmbSAM\revision\4data\dividing_segcell'
+    annotated_root_path = r'H:\EmbSAM\revision\4data\cdfiles'
+    name_dictionary_path = r'H:\EmbSAM\revision\4data\name_dictionary.csv'
     # cell_fate_dictionary = r'/home/cimda/INNERDisk1/ZELIN_MEMB_DATA/CMap CSahepr 34 packed membrane nucleus/CellFate.xls'
 
     stat_path = os.path.join(cell_identity_assigned_path, 'Statistics')
@@ -171,5 +181,5 @@ if __name__ == '__main__':
                                                      annotated_root_path,
                                                      # os.path.join(annotated_root_path, embryo_name),
                                                      stat_path, raw_z_resolution=68, z_resolution=160,
-                                                     three_d_resolution=0.18)
+                                                     three_d_resolution=0.18,cd_file_segmented_bias=bias_this)
         # ===============================================================================================

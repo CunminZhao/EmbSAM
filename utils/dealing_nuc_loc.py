@@ -12,7 +12,7 @@ from utils.cell_tree import construct_celltree, read_cd_file
 from utils.data_io import check_folder
 
 
-def save_the_morphological_and_nuc_location_file(name_dictionary_path, embryo_name, running_max_time,CD_file_root,stat_file_root,raw_z_resolution=92,z_resolution=214,three_d_resolution=0.18):
+def save_the_morphological_and_nuc_location_file(name_dictionary_path, embryo_name, running_max_time,CD_file_root,stat_file_root,raw_z_resolution=92,z_resolution=214,three_d_resolution=0.18,cd_file_segmented_bias=0):
 
     label_name_dict = pd.read_csv(name_dictionary_path, index_col=0).to_dict()['0']
     name_label_dict = {value: key for key, value in label_name_dict.items()}
@@ -27,14 +27,14 @@ def save_the_morphological_and_nuc_location_file(name_dictionary_path, embryo_na
     # cd_file_all_dict = {}
     cd_file_dataframe=read_cd_file(cd_file_path)
     # print('constructing cell tree for ', embryo_name)
-    cell_tree = construct_celltree(cd_file_path, running_max_time,name_dictionary_path)
+    cell_tree = construct_celltree(cd_file_path, running_max_time+cd_file_segmented_bias,name_dictionary_path)
     # ---------------------------------------------------------------
 
     # ==================================================================================================================
     for tp in tqdm(range(1, running_max_time + 1), desc='generating {} nucloc file per time point'.format(embryo_name)):
         # cd_dict_this = {}
         no_repeat_record_list = []
-        this_tp_cd_file_dataframe=cd_file_dataframe.loc[cd_file_dataframe['time']==tp]
+        this_tp_cd_file_dataframe=cd_file_dataframe.loc[cd_file_dataframe['time']==(tp+cd_file_segmented_bias)]
         # for (cell_name_tem, tp_tem), values_tem in cd_file_all_dict.items():
         #     # print(type(tp_tem),type(tp))
         #     if str(tp) == tp_tem:

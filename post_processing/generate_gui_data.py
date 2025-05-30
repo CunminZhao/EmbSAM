@@ -74,7 +74,7 @@ def transpose_csv(source_file, target_file):
 
 
 def generate_cell_wise_gui_data(raw_image_folder, segmented_cell_folder, stat_data_folder, save_gui_folder, embryo_name,
-                                name_dictionary_path, cd_file_path):
+                                name_dictionary_path, cd_file_path, cd_file_segmented_bias=0):
     check_folder(os.path.join(save_gui_folder, embryo_name))
     move_file(os.path.join(stat_data_folder, embryo_name + "_surface.csv"),
               os.path.join(save_gui_folder, embryo_name, embryo_name + "_surface.csv"))
@@ -115,7 +115,7 @@ def generate_cell_wise_gui_data(raw_image_folder, segmented_cell_folder, stat_da
     label_name_dict = pd.read_csv(name_dictionary_path, index_col=0).to_dict()['0']
     name_label_dict = {value: key for key, value in label_name_dict.items()}
     ace_pd = read_cd_file(cd_file_path)
-    cell_tree = construct_celltree(cd_file_path, max_time, name_dictionary_path)
+    cell_tree = construct_celltree(cd_file_path, max_time+cd_file_segmented_bias, name_dictionary_path)
 
     # ----------------save cells at TPCell folder
     bar = tqdm(total=len(volume_pd))
@@ -195,7 +195,7 @@ def generate_cell_wise_gui_data(raw_image_folder, segmented_cell_folder, stat_da
     bar.set_description("saving dividing or loss cells")
     for tp, row in volume_pd.iterrows():
         row = row.dropna()
-        cur_ace_pd = ace_pd[ace_pd["time"] == tp]
+        cur_ace_pd = ace_pd[ace_pd["time"] == tp+cd_file_segmented_bias]
         nuc_cells = list(cur_ace_pd["cell"])  # cell in cd file this time point
         seg_cells = list(row.index)  # cell in volume.csv this time point
         dif_cells = list(set(nuc_cells) - set(seg_cells))  # only get the additional cells; lost cell?
@@ -252,13 +252,24 @@ if __name__ == '__main__':
     # is_generate_fate_wise_gui_data= True # depulicate all raw images and segmented files for ITK-SNAP-CVE software
 
     # =====================calculate volume surface contact=====================================
-    embryo_names = ['Emb1', 'Emb2', 'Emb3', 'Emb4', 'Emb5']
+    embryo_names = ['Emb1', 'Emb2', 'Emb3']
 
     cell_identity_assigned_path = r'C:\Users\zelinli6\OneDrive - City University of Hong Kong - Student\Documents\02paper cunmin segmentation\EmbSAM\seg_result\seg_cell'
     raw_3d_data_root = r'C:\Users\zelinli6\OneDrive - City University of Hong Kong - Student\Documents\02paper cunmin segmentation\EmbSAM\seg_result\3d_raw_data'
     name_dictionary_path = r'C:\Users\zelinli6\OneDrive - City University of Hong Kong - Student\Documents\02paper cunmin segmentation\EmbSAM\seg_result\name_dictionary.csv'
     cd_files_root = r'C:\Users\zelinli6\OneDrive - City University of Hong Kong - Student\Documents\02paper cunmin segmentation\EmbSAM\seg_result\cd files'
-    save_gui_folder = r'C:\Users\zelinli6\OneDrive - City University of Hong Kong - Student\Documents\02paper cunmin segmentation\EmbSAM\Submission\GUIData'
+    save_gui_folder = r'C:\Users\zelinli6\OneDrive - City University of Hong Kong - Student\Documents\02paper cunmin segmentation\EmbSAM\Submission\Public Data\ITK-SNAP-CVE Data'
+    cd_file_biases=[0,0,0]
+
+    # ===================================================================
+    # embryo_names = ['compress1', 'Compressed2', 'Uncompressed1', 'Uncompressed2']
+    # cd_file_biases=[0,0,0,117]
+    #
+    # cell_identity_assigned_path = r'H:\EmbSAM\revision\4data\merged_segcell'
+    # raw_3d_data_root = r'H:\EmbSAM\revision\4data\raw_image_niigz'
+    # name_dictionary_path = r'H:\EmbSAM\revision\4data\name_dictionary.csv'
+    # cd_files_root = r'H:\EmbSAM\revision\4data\cdfiles'
+    # save_gui_folder = r'H:\EmbSAM\revision\4data\GUIData'
 
     gui_data_name_dictionary={}
     label_name_dict = pd.read_csv(name_dictionary_path, index_col=0).to_dict()['0']
@@ -282,4 +293,4 @@ if __name__ == '__main__':
             stat_data_folder = os.path.join(cell_identity_assigned_path, 'Statistics')
             cd_file_path = os.path.join(cd_files_root, 'CD{}.csv'.format(embryo_name))
             generate_cell_wise_gui_data(raw_image_folder, segmented_cell_folder, stat_data_folder, save_gui_folder,
-                                        embryo_name, name_dictionary_path, cd_file_path)
+                                        embryo_name, name_dictionary_path, cd_file_path,cd_file_segmented_bias=cd_file_biases[idx])
