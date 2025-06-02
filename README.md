@@ -73,7 +73,7 @@ the pre-trained models of this project can be downloaded here
     ```
 Then run
 ```
-python EmbSAM.py -cfg_path ./confs/running_Emb1.txt
+python .\EmbSAM.py --config_file ./confs/running_Emb1.txt --nii_path "./nii" --opdir "./output/"
 ```
 
 you will get your result in 
