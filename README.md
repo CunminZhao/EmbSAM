@@ -10,7 +10,7 @@ In [*arXiv*]
 
 
 ## Overview
-<img width="900" alt="Ai" src="[https://github.com/cuminzhao/EmbSAM/assets/80189429/f34bbc3d-dc4d-4f06-ad81-281ff7b766b0](https://github.com/user-attachments/assets/191256b5-1b8d-4734-9025-bcb133c91135)">      
+<img width="900" alt="Ai" src="https://github.com/cuminzhao/EmbSAM/assets/80189429/f34bbc3d-dc4d-4f06-ad81-281ff7b766b0">     
 
 **Fig. 1. The flowchart of *EmbSAM***
 ## Get Started
