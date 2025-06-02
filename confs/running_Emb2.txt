@@ -1,9 +1,7 @@
 rootname=Emb2_
 CD_file=./confs/Emb2_CellTracing.csv
-time_point=[1,30, 60]
+time_point=[30]
 ori_shape=(512,712,68)
 raw_path=./data/Emb2_raw
 data_shape=(256,356,160)
-scale=240.0
-cutoff_lower=0.15
-cutoff_upper=0.9
+scale=255.0
