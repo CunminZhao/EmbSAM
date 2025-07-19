@@ -12,17 +12,15 @@ tensorboard==2.6.0
 tensorboardX==2.4.1
 torch==2.0.1
 torchvision==0.15.2
-tqdm==4.59.0
 opencv-python==4.8.0.74
 opencv-python-headless==4.8.1.78
 pycocotools==2.0.6
-matplotlib
 onnx==1.14.0
 onnxruntime==1.15.1
 scikit-image==0.18.1
 Pillow==10.0.0
 multiprocess==0.70.15
-
+matplotlib
 
 
 
