@@ -2,10 +2,9 @@ nibabel==5.1.0
 tqdm==4.59.0
 scipy==1.11.1
 lpips==0.1.4
-matplotlib==3.3.4
 natsort==7.1.1
 numpy==1.25.0
-pandas==1.2.4
+pandas
 PyYAML==6.0
 seaborn==0.11.1
 tensorboard==2.6.0
@@ -14,13 +13,13 @@ torch==2.0.1
 torchvision==0.15.2
 opencv-python==4.8.0.74
 opencv-python-headless==4.8.1.78
-pycocotools==2.0.6
+pycocotools
 onnx==1.14.0
 onnxruntime==1.15.1
-scikit-image==0.18.1
 Pillow==10.0.0
 multiprocess==0.70.15
-matplotlib
+scikit-image==0.20
+matplotlib==3.7
 
 
 
