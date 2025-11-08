@@ -1,4 +1,4 @@
-# [*arXiv*] *EmbSAM*: Cell boundary localization and Segment Anything Model for 3D fast-growing embryos
+# [*Communications Biology*] *EmbSAM*: Cell boundary localization and Segment Anything Model for 3D fast-growing embryos
 
 **Motivations**: Cellular shape dynamics are critical for understanding cell fate determination and organogenesis during development. However, fluorescence live-cell images of cell membranes frequently suffer from a low signal-to-noise ratio, especially during long-duration imaging with high spatiotemporal resolutions. This is caused by phototoxicity and photobleaching, which limit laser power and hinder effective time-lapse cell shape reconstruction, particularly in rapidly developing embryos.  
 
