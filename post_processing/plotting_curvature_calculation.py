@@ -169,8 +169,8 @@ def calculate_curvature_direction():
 
 def plot_curvature():
     target_pairs = [
-        'ABplp_E', 'ABplp_Ea','ABplp_Ep',
-                    # 'ABpr_C', 'ABpra_C','ABprp_C',
+        # 'ABplp_E', 'ABplp_Ea','ABplp_Ep',
+                    'ABpr_C', 'ABpra_C','ABprp_C',
                     # 'ABpl_MS', 'ABpla_MS'
                     ]
     embryo_name='Emb5'
@@ -179,14 +179,14 @@ def plot_curvature():
     curvature_pd=pd.DataFrame(columns=['Embryo Name','Cell-Cell Contact','Curvature','Time Point'])
 
     #  'ABplp_E',
-    nucleus_dividing_timepoint=173
-    membrane_dividing_timepoint=183
-    direction=1
+    # nucleus_dividing_timepoint=173
+    # membrane_dividing_timepoint=183
+    # direction=1
 
     #   'C_ABpr',
-    # nucleus_dividing_timepoint = 127
-    # membrane_dividing_timepoint = 135
-    # direction = -1
+    nucleus_dividing_timepoint = 127
+    membrane_dividing_timepoint = 135
+    direction = -1
 
     for key_this, value in curvature_dict.items():
         [embryo_name,time_point,contact_name1,contact_name2]=key_this.split('_')
@@ -194,7 +194,7 @@ def plot_curvature():
             continue
         if contact_name1+'_'+contact_name2 in target_pairs:
             curvature_pd.loc[len(curvature_pd)]=[embryo_name,contact_name1+'-'+contact_name2,value*direction/0.18,(int(time_point)-nucleus_dividing_timepoint)*10]
-
+    curvature_pd.to_excel(os.path.join(r'D:\EmbSAM\data',target_pairs[0]+'.xlsx'))
     ax = sns.lineplot(curvature_pd, x='Time Point', y='Curvature', hue='Cell-Cell Contact')
     font_size = 16
 

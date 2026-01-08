@@ -1,6 +1,35 @@
 import glob
 import os
 
+# =====================(SINGLE DATA FORLDER RENAMING)======================================================
+
+# naming_dict={'190311plc1mp1':'Emb1','190311plc1mp3':'Emb2','190311plc1mp2':'Emb3','Membrane':'Emb4','190315plc1mp1':'Emb5',
+#              'emb1':'Emb1','emb2':'Emb2','emb3':'Emb3','emb4':'Emb4','emb5':'Emb5'}
+naming_dict={
+#                'compress1':'Emb6',
+# 'Compressed2':'Emb7',
+'Uncompressed1':'Emb8',
+'Uncompressed2':'Emb9'}
+
+# data_source=r'C:\Users\zelinli6\OneDrive - City University of Hong Kong - Student\Documents\02paper cunmin segmentation\EmbSAM\seg_result\seg_cell'
+
+data_source=r'C:\Users\zelinli6\Downloads\nucloc'
+
+for folder_name in os.listdir(data_source):
+    if folder_name not in naming_dict.keys():
+        continue
+    files=glob.glob(os.path.join(data_source,folder_name,'*'))
+    embryo_name_this_orin=os.path.basename(files[0]).split('.')[0].split('_')[0]
+    for file_name in files:
+        target_name=os.path.basename(file_name).replace(embryo_name_this_orin,naming_dict[embryo_name_this_orin])
+        os.rename(file_name,os.path.join(os.path.dirname(file_name),target_name))
+
+for dir_this in os.listdir(data_source):
+    if dir_this in naming_dict:
+        os.rename(os.path.join(data_source, dir_this),os.path.join(data_source,naming_dict[dir_this]))
+# ================================================================================================================
+
+
 # ======================OBJ DATA (SINGLE DATA FORLDER RENAMING)======================================================
 
 # naming_dict={'190311plc1mp1':'Emb1','190311plc1mp3':'Emb2','190311plc1mp2':'Emb3','Membrane':'Emb4','190315plc1mp1':'Emb5',
@@ -15,16 +44,16 @@ naming_dict={
 
 data_source=r'H:\EmbSAM\revision\4data\tif\combined_obj'
 
-for folder_name in os.listdir(data_source):
-    files=glob.glob(os.path.join(data_source,folder_name,'*'))
-    embryo_name_this_orin=os.path.basename(files[0]).split('.')[0].split('_')[0]
-    for file_name in files:
-        target_name=os.path.basename(file_name).replace(embryo_name_this_orin,naming_dict[embryo_name_this_orin])
-        os.rename(file_name,os.path.join(os.path.dirname(file_name),target_name))
-
-for dir_this in os.listdir(data_source):
-    if dir_this in naming_dict:
-        os.rename(os.path.join(data_source, dir_this),os.path.join(data_source,naming_dict[dir_this]))
+# for folder_name in os.listdir(data_source):
+#     files=glob.glob(os.path.join(data_source,folder_name,'*'))
+#     embryo_name_this_orin=os.path.basename(files[0]).split('.')[0].split('_')[0]
+#     for file_name in files:
+#         target_name=os.path.basename(file_name).replace(embryo_name_this_orin,naming_dict[embryo_name_this_orin])
+#         os.rename(file_name,os.path.join(os.path.dirname(file_name),target_name))
+#
+# for dir_this in os.listdir(data_source):
+#     if dir_this in naming_dict:
+#         os.rename(os.path.join(data_source, dir_this),os.path.join(data_source,naming_dict[dir_this]))
 # ================================================================================================================
 
 # ==================GUI DATA RENAMING==========================================================
